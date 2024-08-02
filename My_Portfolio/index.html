@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faizan Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <style>
+        .card-img-top {
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-body {
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-body .btn {
+            margin-top: auto;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <script>
+        function toggleMenu() {
+            var dropdownMenu = document.querySelector('.dropdown-menu');
+            if (dropdownMenu.style.display === "block") {
+                dropdownMenu.style.display = "none";
+            } else {
+                dropdownMenu.style.display = "block";
+            }
+        }
+
+    </script>
+
+    <header id="navbar">
+        <nav>
+            <div class="name">Faizan's Portfolio</div>
+            <div class="dropdown-menu-btn">
+                <button onclick="toggleMenu()"><i class="ri-list-check"></i></button>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project-section">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#skills-section">Skills</a></li>
+                    <li><a href="#blog-section">Blog</a></li>
+                    <li><a href="#">Hobbies</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="dropdown">
+            <div class="dropdown-menu">
+                <a href="#about">About</a>
+                <a href="#project-section">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="#skills-section">Skills</a>
+                <li><a href="#blog-section">Blog</a></li>
+                <li><a href="#">Hobbies</a></li>
+            </div>
+        </div>
+    </header>
+    <!-- <br><br><br><br> -->
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Mr.Syed Faizan Abdul Salim,</span>
+                <div>a trained Full Stack Java developer</div>
+                <div></div><br>
+                <div class="buttons">
+                    <a href="Faizan.pdf" download=""><button class="btn">Download Resume</button></a>
+                    <!-- <input class="btn" type="button" value="Download Resume"> -->
+                    <a href="https://github.com/SyedFaizan7058">
+                        <button class="btn">Visit Github</button>
+                    </a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="images/myimage.jpg" alt="">
+            </div>
+        </section>
+
+        <hr>
+        <section id="skills-section" class="secondSection">
+            <span class="text-gray">what I have done so far</span>
+            <h1>Tech Skills</h1>
+            <br>
+            <div class="skill-container">
+                <div class="skills">
+                    <img src="images/java.jpeg" alt="Java">
+                    <h4>Java</h4>
+                </div>
+                <div class="skills">
+                    <img src="images/sprin-boot-skill.jpeg" alt="oracle">
+                    <h4>Spring-boot</h4>
+                </div>
+                <div class="skills">
+                    <img src="images/oracle.jpeg" alt="oracle">
+                    <h4>SQL/PLSQL</h4>
+                </div>
+                <div class="skills">
+                    <img src="images/html.jpeg" alt="html">
+                    <h4>HTML</h4>
+                </div>
+                <div class="skills">
+                    <img src="images/css.jpeg" alt="css">
+                    <h4>CSS</h4>
+                </div>
+                <div class="skills">
+                    <img src="images/js.jpeg" alt="js">
+                    <h4>JavaScript</h4>
+                </div>
+            </div>
+        </section><br>
+        <header id="project-section">
+            <h1>My Projects</h1>
+        </header>
+
+        <div class="d-flex w-100 gap-2">
+
+            <!-- <section class="project card w-50">
+
+                <h2>Online Product Store</h2>
+                <p> • The Online Product Store project is a comprehensive e-commerce platform that
+                    revolutionizes online
+                    shopping experiences.</p>
+                <p> • Crafted with a blend of modern technologies including HTML, CSS, JavaScript,
+                    Java
+                    Servlets, JSP, and Oracle Database, this project offers a seamless and secure
+                    environment for users
+                    to
+                    browse, select, and purchase a wide array of products.</p> -->
+
+            <!-- <p>Key features of the Online Product Store include:</p>
+            <ul>
+                <li><strong>User-Friendly Interface:</strong> The interface is designed to be intuitive and visually
+                    appealing, providing users with a delightful shopping experience across desktop and mobile
+                    devices.
+                </li>
+                <li><strong>Extensive Product Catalog:</strong> With categories ranging from electronics and fashion
+                    to
+                    home essentials and beyond, the store boasts an extensive selection of high-quality products to
+                    cater to diverse customer needs.</li>
+                <li><strong>Dynamic Shopping Cart:</strong> Users can easily add, remove, and manage items in their
+                    shopping cart, with real-time updates ensuring accurate order summaries at all times.</li>
+                <li><strong>Secure Checkout Process:</strong> Built-in security measures guarantee the
+                    confidentiality
+                    of user information and payment details during the checkout process, instilling trust and
+                    confidence
+                    in every transaction.</li>
+                <li><strong>User Account Management:</strong> Registered users have access to personalized features
+                    such
+                    as order tracking, order history, and saved preferences, enhancing convenience and user
+                    engagement.
+                </li>
+                <li><strong>Backend Efficiency:</strong> Leveraging Java Servlets and Oracle Database, the project
+                    ensures efficient server-side processing, seamless data retrieval, and robust database
+                    management
+                    for optimal performance.</li>
+            </ul>
+
+            <p>Experience the future of online shopping with the Online Product Store. Explore our diverse catalog,
+                find
+                your favorite products, and enjoy a hassle-free shopping journey from start to finish!</p> -->
+
+            <!-- <a href="#" class="text-center">View Store</a>
+            </section> -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <img src="images/user-aut.png" class="card-img-top" alt="Card Image">
+                            <div class="card-body">
+                                <h2 class="card-title">User Authentication System</h2>
+                                <p class="card-text">Implemented functionalities for user registration, login, new user
+                                    and password recovery.</p>
+                                <!-- <p class="card-text">Ensured data security with hashed passwords and secure session management.</p>
+                                <p class="card-text">Integrated role-based access control to manage user permissions and protected sensitive information effectively.</p> -->
+                                <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <img src="images/online-pro-store.png" class="card-img-top" alt="Card Image">
+                            <div class="card-body">
+                                <h2 class="card-title">Online Product Store</h2>
+                                <!-- <p class="card-text">The Online Product Store project is a comprehensive e-commerce platform that revolutionizes online shopping experiences.</p>
+                                <p class="card-text">Crafted with a blend of modern technologies including HTML, CSS, JavaScript, Java Servlets, JSP, and Oracle Database.</p> -->
+                                <p class="card-text">This project offers a seamless and secure environment for users to
+                                    browse, select, and purchase a wide array of products.</p>
+                                <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <img src="images/rbs.png" class="card-img-top" alt="Card Image">
+                            <div class="card-body">
+                                <h2 class="card-title">RBS</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                                <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="blog-section" class="blog-section">
+            <h2 class="section-title">Latest Blog Posts</h2>
+            <div class="blog-posts">
+                <div class="blog-post">
+                    <img src="images/spring-boot.png" alt="Java programming language" class="blog-image">
+                    <div class="blog-content">
+                        <h3 class="blog-title">Java Best Practices for Beginners</h3>
+                        <p class="blog-excerpt">
+                            Java is a popular programming language that is widely used in enterprise applications
+                            and web development. In this blog post, we'll share some best practices for Java
+                            developers, maintainable code, debugging
+                            techniques.
+                        </p>
+                        <a href="https://www.codewithharry.com/tutorial/java/" class="read-more-link">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-post">
+                    <img src="images/frontend.jpeg" alt="Blog post image" class="blog-image">
+                    <div class="blog-content">
+                        <h3 class="blog-title">Why Frontend is Awesome</h3>
+                        <p class="blog-excerpt">
+                            Frontend Development with HTML, CSS, JavaScript, and Bootstrap
+                            Frontend Development focuses on crafting the part of a website that users interact with
+                            directly. It encompasses several key technologies.
+                        </p>
+                        <a href="https://www.codewithharry.com/videos/web-development-in-hindi-1/"
+                            class="read-more-link">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-post">
+                    <img src="images/database.jpeg" alt="Blog post image" class="blog-image">
+                    <div class="blog-content">
+                        <h3 class="blog-title fw-semibold">Where to use Database</h3>
+                        <p class="blog-excerpt">
+                            SQL is a powerful language for managing and manipulating
+                            relational databases.you’re a beginner learning SQL or an experienced professional,
+                            having a handy reference guide can significantly boost your productivity.
+                        </p>
+                        <a href="https://www.w3schools.com/sql/ " class="read-more-link">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Contact Information</h3>
+                    <p>
+                        Feel free to get in touch with me. I'm always open to new opportunities and collaborations.
+                    </p>
+                    <p>
+                        <strong>Email:</strong> syedfaizan7058@gmail.com<br>
+                        <strong>Phone:</strong> +91 7058653637
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#project-section">Projects</a></li>
+                        <li><a href="#skills-section">Skills</a></li>
+                        <li><a href="#blog-section">Blog</a></li>
+                        <li><a href="/My_Portfolio/contact.html">Contact Me</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Follow Me</h3>
+                    <p>Stay connected with me on social media for updates on my latest projects and developments or
+                        Let's chat on whatsapp
+                    </p>
+
+                    <div class="social-icons">
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="https://www.linkedin.com/in/syed-faizan-7913832b9/"><i
+                                class="ri-linkedin-box-fill"></i></a>
+                        <a href="https://github.com/SyedFaizan7058"><i class="ri-github-fill"></i></a>
+                        <a href="https://www.instagram.com/the_coderrrr/"><i class="ri-instagram-line"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=7058653637" class="whatsapp-button"
+                            target="_blank">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+        </div><br>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Faizan's Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

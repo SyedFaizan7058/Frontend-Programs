@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="nav-css.css">
+    <style>
+        *{
+            font-family:sans-serif ;
+            margin: 0;
+            padding: 0;
+            /* color: white; */
+        }
+        .blog-section {
+            margin: 50px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .blog-posts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .blog-post {
+            width: 45%;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .blog-post:nth-child(2) {
+            width: 45%;
+        }
+
+        .blog-post:nth-child(3) {
+            width: 45%;
+        }
+
+        .blog-image {
+            width: 100%;
+            height: auto;
+            /* padding: 10px; */
+            aspect-ratio: 3/2;
+        }
+
+        .blog-content {
+            padding: 20px;
+        }
+
+        .blog-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .blog-excerpt {
+            font-size: 1.3rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .blog-post:hover{
+            transform: translateY(-10px);
+        }
+
+        .read-more-link {
+            display: block;
+            font-size: 1.3rem;
+            color: #fff;
+            background-color: #1e2167;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .read-more-link:hover {
+            background-color: #0d0d3e;
+        }
+
+        @media (max-width: 768px) {
+
+            .blog-post{
+                width: 100%;
+            }
+
+            .blog-post:nth-child(2) {
+                width: 100%;
+            }
+
+            .blog-post:nth-child(3) {
+                width: 100%;
+            }
+            .blog-posts {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div>
+            <ul>
+                <li><a href="/My_Portfolio/devPortfolio.html">Home</a></li>
+                <li><a href="/My_Portfolio/about.html">About</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="/My_Portfolio/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="blog-section">
+        <h2 class="section-title">Latest Blog Posts</h2>
+        <div class="blog-posts">
+            <div class="blog-post">
+                <img src="/My_Portfolio/images/java-blog.avif" alt="Java programming language" class="blog-image">
+                <div class="blog-content">
+                  <h3 class="blog-title">Java Best Practices for Beginners</h3>
+                  <p class="blog-excerpt">
+                    Java is a popular programming language that is widely used in enterprise applications and web development. In this blog post, we'll share some best practices for Java developers, including tips for writing clean and maintainable code, debugging techniques, and strategies for working with libraries and frameworks.
+                  </p>
+                  <a href="path/to/java-blog-post.html" class="read-more-link">Read More</a>
+                </div>
+              </div>
+            <div class="blog-post">
+                <img src="/My_Portfolio/images/css-blog.png" alt="Blog post image" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Why CSS is Awesome</h3>
+                    <p class="blog-excerpt">
+                        CSS is a powerful tool for styling web pages. With CSS, you can create complex layouts,
+                        animations, and transitions. In this blog post, we'll explore why CSS is so awesome and how you
+                        can use it to create amazing web experiences.
+                    </p>
+                    <a href="Blog.html" class="read-more-link">Read More</a>
+                </div>
+            </div>
+            <div class="blog-post">
+                <img src="/My_Portfolio/images/bootstrap.webp" alt="Blog post image" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">How to Use Bootstrap</h3>
+                    <p class="blog-excerpt">
+                        Bootstrap is a popular front-end framework that makes it easy to create responsive web pages. In
+                        this blog post, we'll show you how to use Bootstrap to create a simple web page with a navbar, a
+                        jumbotron, and a grid layout, to create amazing web experiences.
+                    </p>
+                    <a href="Blog.html" class="read-more-link">Read More</a>
+                </div>
+            </div>
+            <div class="blog-post">
+                <img src="/My_Portfolio/images/js-practice.jpg" alt="Blog post image" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">JavaScript Best Practices</h3>
+                    <p class="blog-excerpt">
+                        JavaScript is a powerful language that can be used to create complex web applications. In this
+                        blog post, we'll share some best practices for writing clean and maintainable JavaScript code.
+                        We'll cover topics like variable naming, code organization, and error handling.
+                    </p>
+                    <a href="Blog.html" class="read-more-link">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

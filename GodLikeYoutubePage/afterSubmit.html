@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar, Product Page, and Footer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Internal CSS */
+        nav {
+            background-color: #26a69a;
+        }
+
+        nav .brand-logo {
+            margin-left: 20px;
+        }
+
+        .product-card {
+            max-width: calc(25px- 40px);
+            margin: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-details {
+            padding: 15px;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            color: #666;
+        }
+
+        .product-price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #26a69a;
+        }
+
+        footer {
+            background-color: #232f3e;
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .footer-section h5 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-social-icons {
+            margin-top: 20px;
+        }
+
+        .footer-social-icons a {
+            color: #fff;
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#!">Home</a></li>
+                <li><a href="#!">About</a></li>
+                <li><a href="#!">Products</a></li>
+                <li><a href="#!">Services</a></li>
+                <li><a href="#!">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#!">Home</a></li>
+        <li><a href="#!">About</a></li>
+        <li><a href="#!">Products</a></li>
+        <li><a href="#!">Services</a></li>
+        <li><a href="#!">Contact</a></li>
+    </ul>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="row">
+                    <div class="col s12 m6 l3">
+                        <div class="product-card">
+                            <div class="product-image"
+                                style="background-image: url('https://via.placeholder.com/300x200')"></div>
+                            <div class="product-details">
+                                <div class="product-title">Product 1</div>
+                                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Sed et feugiat justo.</div>
+                                <div class="product-price">$19.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <div class="product-card">
+                            <div class="product-image"
+                                style="background-image: url('https://via.placeholder.com/300x200')"></div>
+                            <div class="product-details">
+                                <div class="product-title">Product 2</div>
+                                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Sed et feugiat justo.</div>
+                                <div class="product-price">$24.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <div class="product-card">
+                            <div class="product-image"
+                                style="background-image: url('https://via.placeholder.com/300x200')"></div>
+                            <div class="product-details">
+                                <div class="product-title">Product 3</div>
+                                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Sed et feugiat justo.</div>
+                                <div class="product-price">$29.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <div class="product-card">
+                            <div class="product-image"
+                                style="background-image: url('https://via.placeholder.com/300x200')"></div>
+                            <div class="product-details">
+                                <div class="product-title">Product 4</div>
+                                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Sed et feugiat justo.</div>
+                                <div class="product-price">$34.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <div class="product-card">
+                            <div class="product-image"
+                                style="background-image: url('https://via.placeholder.com/300x200')"></div>
+                            <div class="product-details">
+                                <div class="product-title">Product 4</div>
+                                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Sed et feugiat justo.</div>
+                                <div class="product-price">$34.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <div class="product-card">
+                            <div class="product-image"
+                                style="background-image: url('https://via.placeholder.com/300x200')"></div>
+                            <div class="product-details">
+                                <div class="product-title">Product 4</div>
+                                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Sed et feugiat justo.</div>
+                                <div class="product-price">$34.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <div class="product-card">
+                            <div class="product-image"
+                                style="background-image: url('https://via.placeholder.com/300x200')"></div>
+                            <div class="product-details">
+                                <div class="product-title">Product 4</div>
+                                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Sed et feugiat justo.</div>
+                                <div class="product-price">$34.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <div class="product-card">
+                            <div class="product-image"
+                                style="background-image: url('https://via.placeholder.com/300x200')"></div>
+                            <div class="product-details">
+                                <div class="product-title">Product 4</div>
+                                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Sed et feugiat justo.</div>
+                                <div class="product-price">$34.99</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h5>Company</h5>
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Careers</li>
+                    <li>Press</li>
+                    <li>Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Help</h5>
+                <ul>
+                    <li>Payments</li>
+                    <li>Shipping</li>
+                    <li>Returns</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Policy</h5>
+                <ul>
+                    <li>Return Policy</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Follow Us</h5>
+                <div class="footer-social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // Initialize Materialize components
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+</body>
+
+</html>

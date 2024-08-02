@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mizzle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .header .actions a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #28a745;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 0;
+        }
+        .main-content .text-content {
+            max-width: 50%;
+        }
+        .main-content .text-content h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .main-content .text-content p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .main-content .text-content .cta {
+            display: flex;
+            align-items: center;
+        }
+        .main-content .text-content .cta input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .main-content .text-content .cta button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+        }
+        .main-content .image-content img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        .features .feature {
+            text-align: center;
+            max-width: 30%;
+        }
+        .features .feature img {
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .features .feature p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="logo.png" alt="Mizzle Logo">
+                <h1>Mizzle</h1>
+            </div>
+            <nav>
+                <a href="#">Demos</a>
+                <a href="#">Pages</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Megamenu</a>
+                <a href="#">Contact us</a>
+            </nav>
+            <div class="actions">
+                <a href="#">Sign up</a>
+                <a href="#">Buy now!</a>
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="text-content">
+                <span>Award-winning digital services</span>
+                <h1>Creative studio focused on <span style="color: #28a745;">Web Design</span></h1>
+                <p>From concept to execution, we deliver web designs that make an impact. Let your brand shine with our innovative and visually stunning websites.</p>
+                <div class="cta">
+                    <input type="email" placeholder="Enter your email address">
+                    <button>Start trial!</button>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="text.jpg" alt="Team working">
+            </div>
+        </main>
+        <section class="features">
+            <div class="feature">
+                <img src="support.png" alt="24/7 Support">
+                <p>24/7 Support<br>We're always here to help</p>
+            </div>
+            <div class="feature">
+                <img src="award.png" alt="Award Winning agency">
+                <p>Award Winning agency<br>You are in safe hand</p>
+            </div>
+            <div class="feature">
+                <img src="users.png" alt="5k+ Users">
+                <p>5k+ Users<br>Total visitors per month</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+    background: linear-gradient( #96c07f, #679686);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main {
+    width: 100%;
+    /* height: 330px; */
+    /* box-shadow: 0px 0px 10px white; */
+    border-radius: 15px;
+    padding-top: 35px;
+    padding-bottom: 55px;
+    border-width: 4px;
+    border: none;
+    align-items: center;
+    background: #e0e0e0;
+    
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial;
+    /* color: white; */
+}
+
+input[type="text"] {
+    width: 90%;
+    font-size: 24px;
+    height: 15%;
+    padding: 5px;
+    text-align: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    /* background: linear-gradient(45deg, #0a0a0a, #3a4454); */
+    /* color: white; */
+    background: transparent;
+
+}
+
+#display::placeholder {
+    color: black;
+}
+
+#AC {
+    display: flex;
+    margin-left: 28px;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    margin-inline-end: 5%;
+    border-radius: 12px;
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 3px #949494,
+        inset -5px -5px 3px #ffffff;
+    font-size: 0.7em;
+}
+
+.circle:active {
+    box-shadow: 0 0 15px black;
+}
+
+.circle:active {
+    #display::placeholder {
+        color: black;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        width: 90%;
+    }
+
+}

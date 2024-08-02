@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.color {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar h1{
+    color:rgb(255, 204, 0) ;
+}
+
+.right-section{
+    width: 55%;
+}
+
+.right-section img {
+    width: 60%;
+}
+
+
+.nav-bar button{
+    background-color: rgb(255, 204, 0);
+    border: none;
+    font-size: 20px;
+    color: white;
+    width: 180px;
+    height: 40px;
+}
+
+.sections a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.sections a:hover {
+    color: rgb(255, 204, 0);
+    transition:0.5s;
+}
+
+.first-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 100px auto;
+    margin-bottom: 100px;
+}
+
+.left-section {
+    width: 45%;
+    padding: 30px;
+}
+
+.left-section h1 {
+    font-size: 40px;
+}
+
+.left-section h4 {
+    font-size: 20px;
+}
+
+.left-section button {
+    background-color: rgb(255, 204, 0);
+    border: none;
+    font-size: 20px;
+    color: white;
+    width: 200px;
+    height: 50px;
+}
+
+.second-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.card i {
+    font-size: 48px;
+    margin-bottom: 10px;
+    display: block;
+    color: rgb(255, 204, 0);
+}
+
+.card:hover {
+    color: white;
+    background-color: rgb(255, 204, 0);
+    transition: 100ms;
+}
+
+.third-section {
+    padding: 50px 0;
+}
+
+.third-section h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.third-section h3 {
+    text-align: center;
+}
+
+.menu-flex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-flex i{
+    font-size: 48px;
+    color:rgb(255, 204, 0) ;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.menu div {
+    padding: 20px;
+}

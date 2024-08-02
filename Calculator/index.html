@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="position">
+        <h1>Calculator</h1>
+        <div class="main">
+            
+            <input type="text" id="display" readonly="0" placeholder="0">
+
+            <div id="AC">
+                <button class="circle" onclick="clearDisplay()">AC</button>
+                <button class="circle" onclick="deleteLastCharacter()">DEL</button>
+                <button class="circle" onclick="appendToDisplay('%')">%</button>
+                <button class="circle" onclick="appendToDisplay('/')">/</button>
+            </div>
+
+            <div id="AC">
+                <button class="circle" onclick="appendToDisplay('7')">7</button>
+                <button class="circle" onclick="appendToDisplay('8')">8</button>
+                <button class="circle" onclick="appendToDisplay('9')">9</button>
+                <button class="circle" onclick="appendToDisplay('*')">*</button>
+            </div>
+
+            <div id="AC">
+                <button class="circle" onclick="appendToDisplay('4')">4</button>
+                <button class="circle" onclick="appendToDisplay('5')">5</button>
+                <button class="circle" onclick="appendToDisplay('6')">6</button>
+                <button class="circle" onclick="appendToDisplay('-')">-</button>
+            </div>
+
+            <div id="AC">
+                <button class="circle" onclick="appendToDisplay('1')">1</button>
+                <button class="circle" onclick="appendToDisplay('2')">2</button>
+                <button class="circle" onclick="appendToDisplay('3')">3</button>
+                <button class="circle" onclick="appendToDisplay('+')">+</button>
+            </div>
+
+            <div id="AC">
+                <button class="circle" onclick="appendToDisplay('0')">0</button>
+                <button class="circle" onclick="appendToDisplay('00')">00</button>
+                <button class="circle" onclick="appendToDisplay('.')">.</button>
+                <button class="circle" onclick="calculateResult()">=</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

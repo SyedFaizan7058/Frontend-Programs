@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GodLikeYoutubePage</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .header i,
+        .header img {
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+        .header img {
+            max-width: 10%;
+            height: auto;
+            /* aspect-ratio: 3/2; */
+        }
+
+        .search-input {
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        .ri-search-line {
+            opacity: 0.5;
+        }
+
+        .search-input input[type="text"] {
+            margin-left: 20%;
+            width: 70%;
+            height: 40px;
+            border-radius: 30px;
+            padding-left: 20px;
+        }
+
+        .profile button {
+            background: none;
+            border: none;
+            font-size: 30px;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+        }
+
+        .profile button a {
+            text-decoration: none;
+            color: white;
+            background-color: rgba(226, 14, 14, 0.33);
+            border-radius: 30px;
+        }
+
+
+        /* @media screen and (max-width: 500px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .search-input {
+                margin: 10px 0;
+            }
+        } */
+
+        input[type="text"] {
+            width: 40%;
+            height: 40px;
+            border-radius: 30px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        input[type="text"]::placeholder {
+            padding-left: 10px;
+
+        }
+
+        .content {
+            margin-left: 15%;
+        }
+
+        .content img {
+            border-radius: 10px;
+            width: 90%;
+        }
+
+        .sub-content img {
+            width: 15%;
+            border-radius: 50%;
+            margin-right: 30px;
+        }
+
+        .sub-content {
+            margin-top: 30px;
+            display: flex;
+        }
+
+        .sub-content input[type="submit"] {
+            width: 100px;
+            height: 40px;
+            font-size: 15px;
+            border-radius: 30px;
+            border: none;
+            color: black;
+        }
+
+        .text-content a {
+            color: rgb(0, 132, 255);
+        }
+
+        .links a {
+            text-decoration: none;
+            margin-right: 25px;
+            color: #fff;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+            transition: 2s;
+        }
+
+        .links hr {
+            margin-top: 15px;
+            opacity: 0.3;
+        }
+
+        .foryou {
+            margin-top: 20px;
+            /* display: flex;
+            flex-wrap: wrap; */
+        }
+
+        .foryou iframe {
+            width: 350px;
+            height: 200px;
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-contianer">
+
+        <div class="header">
+            <i class="ri-menu-line"></i>
+            <img src="images/Screenshot 2024-05-04 123936.png" alt="Youtube Logo">
+            <div class="search-input">
+                <input type="text" placeholder="Search">
+            </div>
+            <i class="ri-mic-line"></i>
+            <!-- <i class="ri-search-line"></i> -->
+            <i class="ri-video-add-line"></i>
+            <i class="ri-notification-3-line"></i>
+            <div class="profile">
+                <button><a href="">S</a></button>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="left-section">
+                <i class="ri-home-4-line">Home</i>
+            </div>
+
+
+            <div class="content">
+                <img src="images/Screenshot 2024-05-04 000033.png" alt="">
+                <div class="sub-content">
+                    <img src="images/mini-logo.jpg" alt="">
+                    <div class="text-content">
+                        <h1>GodLike Esports</h1><br>
+                        @GodLikeEsportss
+                        ‧
+                        497K subscribers
+                        ‧
+                        146 videos
+                        <br><br>
+                        GodLike is one of the leading esports teams and organization.
+                        <br><br>
+                        <a href="instagram.com/godlike.in">instagram.com/godlike.in</a><span>&nbsp;&nbsp;and 1more
+                            link</span><br><br>
+
+                        <input type="submit" value="Subscribe">
+                    </div>
+                </div><br><br>
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">Videos</a>
+                    <a href="#">Shorts</a>
+                    <a href="#">Live</a>
+                    <a href="#">Playlist</a>
+                    <a href="#">Community</a>
+                    <i class="ri-search-line"></i>
+                    <hr>
+                </div>
+                <div class="foryou">
+                    <h2>For You</h2>
+                    <iframe width="300px" height="" src="https://www.youtube.com/embed/sonnlWyY9hM"
+                        title="GODLIKE GOES SUPER SAIYAN MODE IN BGIS ROUND 2" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/IdLnGGmgQZA" title="GODLIKE DOMINATION IN BGIS ROUND 1"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/g6jwhem2oYw"
+                        title="STARTING WITH A BANG | GODLIKE BGMS DAY 1 BEST MOMENTS" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tresoire-Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifx;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 25px;
+        }
+
+        .section {
+            margin-top: 7px;
+        }
+
+        .section a {
+            text-decoration: none;
+            color: white;
+            margin-right: 15px;
+        }
+
+        .dropdown-menu-btn {
+            display: none;
+        }
+
+        .dropdown-menu-btn button {
+            position: absolute;
+            border: none;
+            color: black;
+            background-color: white;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: black;
+            padding: 10px;
+            top: 60px;
+            right: 20px;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 5px 0;
+            transition: color 0.3s;
+        }
+
+        .dropdown-menu a:hover {
+            color: white;
+        }
+
+        .fw {
+            width: 230px;
+            text-align: center;
+            margin: 150px auto;
+            font-size: 1.5em;
+        }
+
+        @media (max-width: 600px) {
+            .section {
+                display: none;
+            }
+
+            .dropdown-menu-btn {
+                display: block;
+            }
+
+            .dropdown-menu-btn {
+                display: block;
+            }
+
+            .dropdown-menu {
+                position: relative;
+                top: auto;
+                right: auto;
+                width: 100%;
+                text-align: center;
+            }
+
+        }
+
+        .image-container .row1 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .image-container img {
+            width: 45%;
+        }
+
+        .info {
+            font-size: 20px;
+            text-align: center;
+            width: 100%;
+            margin: 150px auto;
+        }
+
+        #image7 {
+            width: 100%;
+        }
+
+        .input-overlay {
+            position: absolute;
+            margin-left: 40px;
+            transform: translateY(-120%);
+        }
+
+        .input-overlay input[type="text"] {
+            font-size: 18px;
+            padding: 8px;
+            opacity: 0.7;
+        }
+
+        .input-overlay input[type="submit"] {
+            font-size: 18px;
+            padding: 8px;
+            opacity: 0.7;
+        }
+
+        footer {
+            margin-left: 40px;
+            margin-bottom: 60px;
+        }
+
+        footer a {
+            color: rgba(255, 255, 255, 0.422);
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        function toggleMenu() {
+            var dropdownMenu = document.querySelector('.dropdown-menu');
+            if (dropdownMenu.style.display === "block") {
+                dropdownMenu.style.display = "none";
+            } else {
+                dropdownMenu.style.display = "block";
+            }
+        }
+    </script>
+
+    <div class="main-container">
+        <div class="nav-container">
+            <div class="name">
+                <h2>Tresoire</h2>
+            </div>
+            <div class="dropdown-menu-btn">
+                <button onclick="toggleMenu()"><i class="ri-menu-fill"></i></button>
+            </div>
+            <div class="section">
+                <a href="index.html">LookBook</a>
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropdown-menu">
+                <a href="#">LookBook</a>
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="fw">
+            <h1>F/W <br>Collection</h1>
+        </div>
+        <div class="collection">
+            <div class="image-container">
+                <div class="row1">
+                    <img src="images/1.jpg" alt="">
+                    <img id="image2" src="images/2.jpg" alt="" height="50%">
+                </div>
+                <br>
+                <div class="row1">
+                    <img src="images/3.jpg" alt="" height="50%">
+                    <img src="images/4.jpg" alt="" height="60%">
+                </div>
+                <!-- <img src="images/5.jpg" alt=""> -->
+            </div>
+        </div>
+
+        <div class="info">
+            <p>Crafted from our exclusive “vegan” leather, this cruelty-free collection is both chic and sustainable.
+                Available in very limited quantities from select stockists.</p>
+            <h1 style="text-decoration: underline;">shop Now</h1>
+        </div>
+        <br>
+        <div>
+            <img id="image7" src="images/7.jpg" alt="">
+            <div class="input-overlay">
+                <h2>The Latest</h2><br>
+                <p>Sign up to receive news and updates.</p><br>
+                <input type="text" placeholder="Email Address">
+                <input type="submit" value="Sign Up">
+            </div>
+        </div>
+        <br>
+        <footer>
+            <h1>Tresoire</h1><br>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a><br><br>
+            <span>Made with <a href="#">Faizan</a></span>
+        </footer>
+    </div>
+
+</body>
+
+</html>
